@@ -1,0 +1,21 @@
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Employee Creation</title>
+</head>
+<body>
+
+<div th:each="employee: ${employees}"> 
+
+<p th:text="${student.firstname}"> </p>
+<p th:text="${student.lastname}"> </p>
+
+<a th:href="@{/}"> Home</a>
+</div>
+</body>
+</html>
+
+

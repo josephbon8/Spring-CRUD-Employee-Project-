@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Employee Creation</title>
+</head>
+<body>
+
+<div th:each="employee: ${employees}"> 
+
+<p th:text="${employee.firstname}"> </p>
+<p th:text="${employee.lastname}"> </p>
+
+<a th:href="@{/fullInfo/{id}(id=${employee.id})}"> Full Info </a>
+<a th:href= "@{/updateEmployee/{id} (id= ${employee.id})}"> Update </a>
+<a th:href="@{/deleteEmployee/{id}(id= ${employee.id})}" > Delete </a>
+</div>
+</body>
+</html>

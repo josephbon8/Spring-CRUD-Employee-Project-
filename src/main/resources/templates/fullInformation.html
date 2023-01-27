@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xlmns:th= "http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8"
+<title> Employee Client UI</title>
+ </head>
+
+<div th:object="${savedEmployee}">
+<p th:text= "*{id}" > </p>
+<p th:text="*{firstname}"> </p>
+<p th:text="*{lastname}"> </p>
+<p th:text="*{salary}"> </p>
+<p th:text="*{state}"> </p>
+<p th:text="*{country}"> </p>
+
+
+<a th:href="@{/}"> Home</a>
+</div>
+ </html>
